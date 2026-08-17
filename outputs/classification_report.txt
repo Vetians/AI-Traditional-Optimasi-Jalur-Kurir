@@ -1,0 +1,20 @@
+Classification Report � TSP Imitation Learning v2 (Binary)
+============================================================
+Train Accuracy  : 0.9978
+Test Accuracy   : 0.9971
+Step Accuracy   : 0.9970
+
+                precision    recall  f1-score   support
+
+ Tidak Dipilih       1.00      1.00      1.00   1075159
+Dipilih Greedy       0.91      1.00      0.95     32251
+
+      accuracy                           1.00   1107410
+     macro avg       0.96      1.00      0.98   1107410
+  weighted avg       1.00      1.00      1.00   1107410
+
+
+K-Fold Cross Validation (5-Fold)
+========================================
+CV Scores : [0.9845 0.9875 0.9855 0.9875 0.988 ]
+CV Mean   : 0.9866 +/- 0.0014
