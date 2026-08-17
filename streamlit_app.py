@@ -94,10 +94,13 @@ st.markdown("""
 # Ensure app.py can be imported correctly
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+import traceback
+
 try:
     from app import load_model, predict_route, build_distance_matrix
-except ImportError:
-    st.error("Gagal mengimpor modul app.py. Pastikan file berada di folder yang sama.")
+except Exception as e:
+    st.error(f"Gagal mengimpor app.py: {e}")
+    st.code(traceback.format_exc())
     st.stop()
 
 # --- MODEL LOADING ---
